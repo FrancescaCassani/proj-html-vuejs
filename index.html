@@ -6,83 +6,91 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.12/vue.js'></script>
     <link rel="preconnect" href="https://fonts.gstatic.com"> 
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
 
     <title>Everlead</title>
 </head>
 <body>
+  <div id="everlead">
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="container">
+        <nav class="menu-nav">
+  
+          <!-- Header-Logo -->
+          <div class="header-logo">
+            <img src="" alt="logo">
+          </div>
+  
+          <!-- Navigation Bar -->
+          <div class="header-nav">
+            <ul class="menu">
+              <li v-for="item in header">
+                <h4> {{item.text}} </h4>
+              </li>
+              <i class="fas fa-search"></i>
+              <i class="fas fa-list"></i>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
 
-  <!-- HEADER -->
-  <header class="main-header">
-    <div class="container">
-      <nav class="menu-nav">
 
-        <!-- Header-Logo -->
-        <div class="header-logo">
-          <img src="" alt="logo">
+    <!-- JUMBOTRON -->
+    <div class="jumbotron">
+      <div class="container">
+  
+        <!-- Left Arrow -->
+        <i></i>
+  
+        <div class="contents">
+          <!-- Text -->
+          <div class="text-jumbotron">
+            <h1></h1>
+            <p></p>
+          </div>
+    
+          <!-- Buttons -->
+          <div class="btn">
+            <a href="#"></a>
+          </div>
+          <div class="btn">
+            <a href="#"></a>
+          </div>
         </div>
-
-        <!-- Navigation Bar -->
-        <div class="header-nav">
-          <ul>
-            <li>
-
-            </li>
-          </ul>
-        </div>
-      </nav>
+        
+        <!-- Right Arrow -->
+        <i></i>
+        
+      </div>
     </div>
-  </header>
+  
 
 
-  <!-- JUMBOTRON -->
-  <div class="jumbotron">
-    <div class="container">
-
-      <!-- Left Arrow -->
-      <i></i>
-
-      <div class="contents">
+    <!-- SECTION OUR SPECIALTIES -->
+    <section class="specialties">
+      <div class="middle-container">
+  
         <!-- Text -->
-        <div class="text-jumbotron">
+        <div class="text-specialties">
           <h1></h1>
           <p></p>
         </div>
   
-        <!-- Buttons -->
-        <div class="btn">
-          <a href="#"></a>
-        </div>
-        <div class="btn">
-          <a href="#"></a>
+        <!-- Loghi -->
+        <div class="logos">
+          <img src="" alt="">
+          <h5></h5>
+          <small></small>
         </div>
       </div>
-      
-      <!-- Right Arrow -->
-      <i></i>
-      
-    </div>
+    </section>
+  
   </div>
 
-
-  <!-- SECTION OUR SPECIALTIES -->
-  <section class="specialties">
-    <div class="middle-container">
-
-      <!-- Text -->
-      <div class="text-specialties">
-        <h1></h1>
-        <p></p>
-      </div>
-
-      <!-- Loghi -->
-      <div class="logos">
-        <img src="" alt="">
-        <h5></h5>
-        <small></small>
-      </div>
-    </div>
-  </section>
+  
 
 
 
