@@ -15,25 +15,23 @@
   <div id="everlead">
     <!-- HEADER -->
     <header class="main-header">
-      <div class="container">
-        <nav class="menu-nav">
-  
-          <!-- Header-Logo -->
-          <div class="header-logo">
-            <img :src="'./img/logo-img' + imgHeader.logo + '.png'">
-            <img :src="'./img/logo-img' + imgHeader.logoDot + '.png'">
-          </div>
-  
+      <div class="container-header">
+
+        <!-- Header-Logo -->
+        <div class="header-logo">
+          <img :src="'./img/logo-img' + imgHeader.logo + '.png'">
+          <img :src="'./img/logo-img' + imgHeader.logoDot + '.png'">
+        </div>
+    
           <!-- Navigation Bar -->
-          <div class="header-nav">
-            <ul class="menu">
-              <li v-for="item in header">
-                <h4> {{item.text}} </h4>
-              </li>
-              <i class="fas fa-search"></i>
-              <i class="fas fa-list"></i>
+        <nav class="menu-nav">
+          <ul class="menu">
+            <li v-for="item in header">
+              <a href="#"> {{item.text}} </a>
+            </li>
+            <i class="fas fa-search"></i>
+            <i class="fas fa-list"></i>
             </ul>
-          </div>
         </nav>
       </div>
     </header>
@@ -42,6 +40,7 @@
     <!-- JUMBOTRON -->
     <div class="jumbotron">
       <div class="container">
+        <img :src="imgJumbo.jumbo" alt="">
   
         <!-- Left Arrow -->
         <!-- <i class="fas fa-long-arrow-alt-left"></i> -->
