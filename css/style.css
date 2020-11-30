@@ -35,6 +35,7 @@ header {
 
 /* Logo */
 .header-logo {
+  margin-left: 60px;
   flex-basis: 70%;
 }
 
@@ -72,3 +73,74 @@ header {
   font-size: 14px;
   color: #000;
 }
+
+
+/* JUMBOTRON */
+.jumbotron {
+  position: relative;
+  height: 950px;
+  background-image: url("../img/rev-slider-main-home-img-03.jpg");
+  background-size: cover;
+}
+
+.contents {
+  position: absolute;
+  top: 450px;
+  left: 300px;
+  max-width: 550px;
+}
+
+/* Text */
+.text-jumbotron h1 {
+  position: relative;
+  padding: 15px 0 15px 5px;
+  font-size: 60px;
+}
+
+.text-jumbotron span {
+  position: absolute;
+  top: 65px;
+  left: 50%;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #ff4612;
+  border-radius: 50%;
+}
+
+/* Buttons */
+.btn {
+  width: 150px;
+  height: 30px;
+  margin-top: 20px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid white;
+  display: inline-block;
+  margin-right: 8px;
+}
+
+.btn a {
+  font-size: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Button white */
+.btn-white {
+  margin-top: 3px;
+  border-right: 1px solid grey;
+  max-width: 100px;
+}
+
+.btn-orange {
+  margin-top: 3px;
+  border-right: 1px solid #ff4612;
+  max-width: 100px;
+}
+
+
+
+
+
+

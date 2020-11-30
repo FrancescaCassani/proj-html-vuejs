@@ -13,8 +13,5 @@ const everlead = new Vue ({
             logo: '-02',
             logoDot: '-01'
         },
-        imgJumbo: {
-            jumbo: './img/rev-slider-main-home-img-03.jpg'
-        }
     }
 });
