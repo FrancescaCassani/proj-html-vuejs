@@ -53,13 +53,13 @@
           </div>
     
           <!-- Buttons -->
-          <div class="btn">
+          <div class="btn white">
             <div class="btn-white">
               <a href="#">Read More</a>
             </div>
           </div>
           
-          <div class="btn">
+          <div class="btn orange">
             <div class="btn-orange">
               <a href="#">Puschase</a>
             </div>
@@ -76,19 +76,27 @@
 
     <!-- SECTION OUR SPECIALTIES -->
     <section class="specialties">
-      <div class="middle-container">
+      <div class="middle-container t-c ">
   
         <!-- Text -->
         <div class="text-specialties">
-          <h1></h1>
-          <p></p>
+          <h1>Our specialties
+            <span></span>
+          </h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
   
         <!-- Loghi -->
-        <div class="logos">
-          <img src="" alt="">
-          <h5></h5>
-          <small></small>
+        <div>
+          <ul class="collection">
+            <li class="loghi" v-for="item in specialties">
+              <div class="logo">
+                <img :src="item.logo">
+              </div>
+              <h4>{{item.name}}</h4>
+              <small>{{item.text}}</small>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
