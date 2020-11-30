@@ -7,7 +7,11 @@ const everlead = new Vue ({
             {text: "blog"},
             {text: "shop"},
             {text: "events"},
-            {text: "elements"},
+            {text: "elements"}
         ],
+        imgHeader: {
+            logo: '-02',
+            logoDot: '-01'
+        },
     }
 });
