@@ -36,6 +36,7 @@
     </header>
 
 
+
     <!-- JUMBOTRON -->
     <div class="jumbotron">
       <!-- Left Arrow -->
@@ -153,60 +154,22 @@
         <div class="appointments">
           <h3>Upcoming Events</h3>
           <ul>
-            <li>
+            <li v-for="item in events">
               <div class="date">
-                <span>07</span>
-                <p>Jan, 2022</p>
+                <span>{{item.day}}</span>
+                <p>{{item.year}}</p>
               </div>
               <div class="text">
-                <h4>Melbourne Coaching</h4>
+                <h4>{{item.coaching}}</h4>
                 <p class="c0">
                 <i class="far fa-clock"></i>
-                9:00 am - 5:00 pm, Jan 7, 2022
+                {{item.time}}
                 </p>
                 <p class="c0">
                 <i class="fas fa-map-marker-alt"></i>
-              Cambridge, MA 02138, USA
+                {{item.location}}
                 </p>
-                <h5>Read more</h5>
-              </div>
-            </li>
-
-            <li>
-              <div class="date">
-                <span>11</span>
-                <p>Jan, 2022</p>
-              </div>
-              <div class="text">
-                <h4>Melbourne Coaching</h4>
-                <p class="c0">
-                <i class="far fa-clock"></i>
-                9:00 am - 5:00 pm, Jan 11, 2022
-                </p>
-                <p  class="c0">
-                <i class="fas fa-map-marker-alt"></i>
-                Cambridge, MA 02138, USA
-                </p>
-                <h5>Read more</h5>
-              </div>
-            </li>
-
-            <li>
-              <div class="date">
-                <span>21</span>
-                <p>Jan, 2022</p>
-              </div>
-              <div class="text">
-                <h4>Melbourne Coaching</h4>
-                <p class="c0">
-                <i class="far fa-clock"></i>
-                9:00 am - 5:00 pm, Jan 21, 2022
-                </p>
-                <p class="c0">
-                <i class="fas fa-map-marker-alt"></i>
-                Cambridge, MA 02138, USA
-                </p>
-                <h5>Read more</h5>
+                <h5>{{item.moreInfo}}</h5>
               </div>
             </li>
           </ul>
@@ -304,7 +267,7 @@
               </p>
               <div class="text">
                 <h4>Next Investment</h4>
-                <p class="c0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quibusdam sunt est necessitatibus...</p>
+                <p class="c0">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quo quidem obcaecati totam iste eligendi ...."</p>
                 <h5>Read More</h5>
               </div>
             </div>
@@ -326,7 +289,7 @@
               </p>
               <div class="text">
                 <h4>Next Investment</h4>
-                <p class="c0">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quibusdam sunt est necessitatibus..."</p>
+                <p class="c0">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quo quidem obcaecati totam iste eligendi ...."</p>
                 <h5>Read More</h5>
               </div>
             </div>
@@ -349,7 +312,7 @@
               </p>
               <div class="text">
                 <h4>Next Investment</h4>
-                <p class="c0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quibusdam sunt est necessitatibus...</p>
+                <p class="c0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quo quidem obcaecati totam iste eligendi ....</p>
                 <h5>Read More</h5>
               </div>
             </div>
