@@ -354,6 +354,12 @@ color: #000;
   color: white;
 }
 
+.circle.mid {
+  right: 20px;
+  bottom: 60px;
+  padding-left: 16px;
+}
+
 
 /* UPCOMING EVENTS */
 .upcoming-events {
@@ -429,6 +435,13 @@ color: #000;
   font-size: 11px;
 }
 
+.circle.third {
+  right: 50px;
+  bottom: 800px;
+  padding-left: 16px;
+}
+
+
 .events .creative {
   position: absolute;
   width: 550px;
@@ -482,6 +495,12 @@ color: #000;
   font-size: 16px;
 }
 
+.circle.fourth {
+  right: 50px;
+  bottom: 200px;
+  padding-left: 16px;
+}
+
 .bar {
   width: 400px;
   height: 2px;
@@ -522,7 +541,8 @@ color: #000;
   height: 800px;
 }
 
-.latest-news i {
+.latest-news .right,
+.latest-news .left {
   position: absolute;
   top: 60%;
 }
@@ -573,7 +593,6 @@ color: #000;
   margin-top: 20px;
 }
 
-
 .people .collection {
   display: flex;
   flex-wrap: wrap;
@@ -603,6 +622,12 @@ color: #000;
   text-align: left;
   position: absolute;
   bottom: -160px;
+}
+
+.circle.fifth {
+  right: 50px;
+  bottom: 50%;
+  padding-left: 16px;
 }
 
 
@@ -639,17 +664,19 @@ color: #000;
   bottom: 0;
 }
 
-.testimonials .left{
+.testimonials .left {
   left: 150px;
   bottom: 150px;
 }
 
-.testimonials .right{
+.testimonials .right {
   right: 150px;
   bottom: 150px;
 }
 
 
+
+/* PLAY */
 .play {
   background-image: url("../img/h1-img-04.jpg");
   background-repeat: no-repeat;
