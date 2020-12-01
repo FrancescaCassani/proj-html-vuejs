@@ -458,7 +458,7 @@ color: #000;
 .latest-news {
   position: relative;
   background: #f9f9f9;
-  height: 1000px;
+  height: 800px;
 }
 
 .latest-news .background img {
@@ -508,4 +508,42 @@ color: #000;
   position: absolute;
   bottom: -160px;
 }
+
+
+/* TESTIMONIALS */
+.testimonials {
+  /* display: flex; */
+  background: rgba(0, 0, 0, 0.95);
+  height: 600px;
+}
+
+.testimonials h1 {
+  font-size: 230px;
+}
+
+.testimonials .profile {
+  position: relative;
+  color: #fff
+}
+
+.testimonials .profile img {
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.testimonials i {
+  position: absolute;
+  color: white;
+  bottom: 0;
+}
+
+.testimonials .left{
+  left: 150px;
+}
+
+.testimonials .right{
+  right: 150px;
+}
+
+
 
