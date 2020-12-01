@@ -38,11 +38,9 @@
 
     <!-- JUMBOTRON -->
     <div class="jumbotron">
+      <!-- Left Arrow -->
+      <i class="fas fa-long-arrow-alt-left left"></i>
       <div class="container">
-  
-        <!-- Left Arrow -->
-        <!-- <i class="fas fa-long-arrow-alt-left"></i> -->
-  
         <div class="contents">
           <!-- Text -->
           <div class="text-jumbotron">
@@ -65,11 +63,9 @@
             </div>
           </div>
         </div>
-        
-        <!-- Right Arrow -->
-        <!-- <i class="fas fa-long-arrow-alt-right"></i> -->
-        
       </div>
+      <!-- Right Arrow -->
+      <i class="fas fa-long-arrow-alt-right right"></i>
     </div>
   
 
@@ -94,7 +90,7 @@
                 <img :src="item.logo">
               </div>
               <h4>{{item.name}}</h4>
-              <small>{{item.text}}</small>
+              <small class="c0">{{item.text}}</small>
             </li>
           </ul>
           <span class="circle first">
@@ -117,9 +113,9 @@
 
       <div class="bio">
         <h2>Jason Bickford</h2>
-        <small>Founder and Executive Director</small>
+        <small class="c0 ">Founder and Executive Director</small>
         
-        <p><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, sapiente! Debitis, sapiente quisquam numquam eligendi totam consequatur facilis quasi officiis, odit molestias esse, est voluptates architecto veniam quas eum? Veritatis!</p>
+        <p class="c0 "><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, sapiente! Debitis, sapiente quisquam numquam eligendi totam consequatur facilis quasi officiis, odit molestias esse, est voluptates architecto veniam quas eum? Veritatis!</p>
         <ul class="social">
           <li>
             <a  href="#">
@@ -159,11 +155,11 @@
               </div>
               <div class="text">
                 <h4>Melbourne Coaching</h4>
-                <p>
+                <p class="c0">
                 <i class="far fa-clock"></i>
                 9:00 am - 5:00 pm, Jan 7, 2022
                 </p>
-                <p>
+                <p class="c0">
                 <i class="fas fa-map-marker-alt"></i>
               Cambridge, MA 02138, USA
                 </p>
@@ -178,11 +174,11 @@
               </div>
               <div class="text">
                 <h4>Melbourne Coaching</h4>
-                <p>
+                <p class="c0">
                 <i class="far fa-clock"></i>
                 9:00 am - 5:00 pm, Jan 11, 2022
                 </p>
-                <p>
+                <p  class="c0">
                 <i class="fas fa-map-marker-alt"></i>
                 Cambridge, MA 02138, USA
                 </p>
@@ -197,11 +193,11 @@
               </div>
               <div class="text">
                 <h4>Melbourne Coaching</h4>
-                <p>
+                <p class="c0">
                 <i class="far fa-clock"></i>
                 9:00 am - 5:00 pm, Jan 21, 2022
                 </p>
-                <p>
+                <p class="c0">
                 <i class="fas fa-map-marker-alt"></i>
                 Cambridge, MA 02138, USA
                 </p>
@@ -212,10 +208,13 @@
         </div>
 
         <div class="creative">
-          <h2>Creative Leader</h2>
-          <p><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, sapiente! Debitis, sapiente quisquam numquam eligendi totam consequatur facilis quasi officiis, odit molestias esse, est voluptates architecto veniam quas eum? Veritatis!</p>
+          <h2>Creative Leader
+            <span></span>
+          </h2>
+          
+          <p class="c0"><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, sapiente! Debitis, sapiente quisquam numquam eligendi totam consequatur facilis quasi officiis, odit molestias esse, est voluptates architecto veniam quas eum? Veritatis!</p>
           <h5>Read more</h5>
-        </div> 
+        </div>
 
         <div class="levels">
           <div>
@@ -260,6 +259,7 @@
 
     <!-- LATEST NEWS -->
     <section class="latest-news">
+      <i class="fas fa-long-arrow-alt-left left"></i>
       <div class="background">
         <img src="./svg/svg-4.svg" alt="">
       </div>
@@ -270,7 +270,7 @@
           <h1>Lastest news
             <span></span>
           </h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+          <p class="c0">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
         </div>
       </div>
 
@@ -284,7 +284,7 @@
               <img src="./img/h1-blog-img-03.jpg">
             </div>
             <div class="date">
-              <p>
+              <p class="c0">
                 <i class="far fa-clock"></i>
                 May 5, 2019
                 <i class="far fa-user"></i>
@@ -292,8 +292,8 @@
               </p>
               <div class="text">
                 <h4>Next Investment</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quibusdam sunt est necessitatibus...</p>
-                <h3>Read More</h3>
+                <p class="c0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quibusdam sunt est necessitatibus...</p>
+                <h5>Read More</h5>
               </div>
             </div>
           </li>
@@ -306,7 +306,7 @@
               <img src="./img/h1-img-01.jpg">
             </div>
             <div class="date">
-              <p>
+              <p class="c0">
                 <i class="far fa-clock"></i>
                 May 5, 2019
                 <i class="far fa-user"></i>
@@ -314,8 +314,8 @@
               </p>
               <div class="text">
                 <h4>Next Investment</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quibusdam sunt est necessitatibus...</p>
-                <h3>Read More</h3>
+                <p class="c0">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quibusdam sunt est necessitatibus..."</p>
+                <h5>Read More</h5>
               </div>
             </div>
           </li>
@@ -329,7 +329,7 @@
               <img src="./img/h1-blog-img-01.jpg">
             </div>
             <div class="date">
-              <p>
+              <p class="c0">
                 <i class="far fa-clock"></i>
                 May 5, 2019
                 <i class="far fa-user"></i>
@@ -337,13 +337,14 @@
               </p>
               <div class="text">
                 <h4>Next Investment</h4>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quibusdam sunt est necessitatibus...</p>
-                <h3>Read More</h3>
+                <p class="c0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis quibusdam sunt est necessitatibus...</p>
+                <h5>Read More</h5>
               </div>
             </div>
           </li>
         </ul>
       </div>
+      <i class="fas fa-long-arrow-alt-right right"></i>
     </section>
 
 
@@ -354,16 +355,26 @@
       
       <div class="profile">
         <!-- Left Arrow -->
-        <i class="fas fa-long-arrow-alt-left left"></i>
+        <i class="fas fa-long-arrow-alt-left left bd"></i>
         <img src="./img/h3-img-04.png" alt="">
-        <h4>Cynthia Clarck</h4>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, nostrum nemo? <br>Animi repellat quam sequi corporis aperiam ipsam nemo cupiditate sapiente.</p>
+        <h4>Cynthia Clark</h4>
+        <p class="bd">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, nostrum nemo? <br>Animi repellat quam sequi corporis aperiam ipsam nemo cupiditate sapiente.</p>
         <!-- Right Arrow -->
-       <i class="fas fa-long-arrow-alt-right right"></i>
+       <i class="fas fa-long-arrow-alt-right right bd"></i>
       </div>
 
-      
+      <div class="play">
+        <i class="fas fa-play"></i>
+        
+        <div class="lateral-square">
+          <img src="./svg/svg-8.svg" alt="">
+        </div>
 
+        <div class="shopping-cart">
+          <img src="./svg/svg-7.svg" alt="">
+        </div>
+        
+      </div>
 
     </section>
   </div>
