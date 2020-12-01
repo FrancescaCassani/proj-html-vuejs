@@ -10,7 +10,6 @@ const everlead = new Vue ({
             {text: "elements"}
         ],
         imgHeader: {
-            logo: '-02',
             logoDot: '-01'
         },
         specialties: [

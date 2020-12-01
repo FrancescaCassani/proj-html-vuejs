@@ -248,7 +248,7 @@ color: #000;
 /* THE FOUNDER */
 .jason-bickford {
   position: relative;
-  height: 800px;
+  height: 450px;
   background: #f9f9f9;
 }
 
@@ -283,8 +283,119 @@ color: #000;
   height: 2px;
   border-radius: 2px;
   background: #ff4612;
-  margin-top: 10px;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
+
+
+.jason-bickford .bio .social {
+  display: flex;
+  list-style: none;
+}
+
+.jason-bickford .bio .social i {
+  width: 22px;
+  height: 22px;
+  background: #ff4612;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  margin-right: 12px;
+  margin-top: 12px;
+  padding-top: 3px;
+}
+
+.jason-bickford .bio .rectangle {
+  display: inline-block;
+  position: relative;
+  left: -567px;
+  bottom: -91px;
+  width: 100px;
+  height: 60px;
+  background: #ff4612;
+}
+
+.jason-bickford .bio .rectangle .left{
+  position: absolute;
+  top: 22px;
+  left: 30px;
+  color: white;
+}
+
+.jason-bickford .bio .rectangle .right{
+  position: absolute;
+  top: 22px;
+  right: 30px;
+  color: white;
+}
+
+
+/* UPCOMING EVENTS */
+.upcoming-events {
+  position: relative;
+  height: 1700px;
+  background: #f9f9f9;
+}
+
+.events {
+  background-image: url("../img/h1-img-09.jpg");
+  background-size: cover;
+  height: 1000px;
+  max-width: 99%;
+  display: flex;
+  flex-direction: column;
+}
+
+.events .appointments {
+  position: absolute;
+  top: 10%;
+  left: 15%;
+  width: 405px;
+  height: 500px;
+  background: #fff;
+}
+
+.events .appointments h3 {
+  padding: 25px 0 30px 30px;
+  border-bottom: 2px solid grey;
+}
+
+.events .appointments li {
+  padding: 30px 0 30px 20px;
+  list-style: none;
+  border-bottom: 2px solid grey;
+}
+
+.events .appointments li:last-child {
+  border-bottom: none;
+}
+
+.events .appointments li .text {
+  margin-left: 100px;
+}
+
+.events .appointments .date {
+  position: absolute;
+  width: 65px;
+  height: 45px;
+  background: #ff4612;
+  color: white;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.events .appointments .date p {
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
 
 
 
