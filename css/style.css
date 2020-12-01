@@ -333,8 +333,8 @@ color: #000;
 /* UPCOMING EVENTS */
 .upcoming-events {
   position: relative;
-  height: 1700px;
-  background: #f9f9f9;
+  height: 1400px;
+  background: #fff;
 }
 
 .events {
@@ -388,6 +388,77 @@ color: #000;
   font-size: 12px;
 }
 
+.events .creative {
+  position: absolute;
+  width: 550px;
+  height: 250px;
+  bottom: 80px;
+  left: 300px;
+  padding: 25px
+}
+
+.events .levels {
+  position: absolute;
+  width: 550px;
+  height: 300px;
+  right: 350px;
+  bottom: 50px;
+  padding: 25px;
+
+}
+
+.events .levels .line1::after {
+  content: "";
+  display: inline-block;
+  width: 200px;
+  height: 2px;
+  border-radius: 2px;
+  background: #ff4612;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.levels div {
+  margin-top: 15px;
+}
+.bar {
+  width: 400px;
+  height: 2px;
+  background: grey;
+}
+
+.percent {
+  background: #ff4612;
+  height: 2px;
+}
+
+.levels .one {
+  position: absolute;
+  top: 50px;
+  right: 120px;
+}
+.levels .two {
+  position: absolute;
+  top: 105px;
+  right: 120px;
+}
+.levels .three {
+  position: absolute;
+  top: 160px;
+  right: 120px;
+}
+.levels .four {
+  position: absolute;
+  top: 215px;
+  right: 120px;
+}
+
+
+/* LATEST NEWS */
+.latest-news {
+  background: grey;
+  height: 1000px;
+}
 
 
 
