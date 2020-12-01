@@ -207,7 +207,7 @@ color: #000;
   margin-top: 10px;
 }
 
-.collection {
+.position .collection {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -215,22 +215,22 @@ color: #000;
   list-style: none;
 }
 
-.collection .loghi {
+.position .collection .loghi {
   flex-basis: 250px;
   margin: 15px 25px;
   padding: 25px;
   text-align: center;
 }
 
-.collection .loghi img {
+.position .collection .loghi img {
   max-width: 120px;
 }
 
-.collection .loghi h4 {
+.position .collection .loghi h4 {
   padding: 12px;
 }
 
-.collection .loghi small {
+.position .collection .loghi small {
   color: #cccccc;
 }
 
@@ -456,28 +456,56 @@ color: #000;
 
 /* LATEST NEWS */
 .latest-news {
-  background: grey;
+  position: relative;
+  background: #f9f9f9;
   height: 1000px;
 }
 
+.latest-news .background img {
+  position: absolute;
+  top: -80px;
+  left: 100px;
+}
+
+.text-news::after {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  border-radius: 2px;
+  background: #ff4612;
+  margin-top: 10px;
+}
 
 
+.people .collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin-top: 100px;
+}
 
+.people .collection .loghi {
+  flex-basis: 250px;
+  margin: 15px 25px;
+  padding: 25px;
+  text-align: center;
+  position: relative;
+}
 
+.people .collection .loghi img {
+  max-width: 350px;
+}
 
+.people .collection .loghi .second {
+  position: absolute;
+  bottom: -40px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.people .collection .loghi .date {
+  text-align: left;
+  position: absolute;
+  bottom: -160px;
+}
 
