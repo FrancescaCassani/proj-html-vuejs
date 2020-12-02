@@ -60,6 +60,13 @@ const everlead = new Vue ({
                 moreInfo: 'Read more'
             }
         ],
+        logos: [
+            {img: './img/h4-clients-img-03.png'},
+            {img: './img/h4-clients-img-05.png'},
+            {img: './img/h4-clients-img-07.png'},
+            {img: './img/h4-clients-img-09.png'},
+            {img: './img/h4-clients-img-01.png'},  
+        ],
     //     images: [
     //         "./img/h3-img-04.png",  //0
     //         "./img/h3-img-07.png",  //1

@@ -400,14 +400,21 @@
           </div>
         </div>
       </div>
+    </section>
 
+
+    <section>
       <div class="logos">
-
+        <ul class="collection">
+          <li class="loghi" v-for="item in logos">
+            <div class="structures">
+              <img :src="item.img">
+            </div>
+          </li>
+        </ul>
       </div>
-
     </section>
   </div>
-
   <script src="./js/main.js"></script>
 </body>
 </html>

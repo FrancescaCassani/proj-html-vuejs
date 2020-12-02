@@ -805,6 +805,35 @@ color: #000;
 }
 
 
+/* Loghi */
+.logos .collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 15px;
+  list-style: none;
+  transform: translateY(-160px);
+}
+
+.logos .collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 15px;
+  list-style: none;
+}
+
+.logos .collection .loghi {
+  flex-basis: 180px;
+  margin: 15px 25px;
+  padding: 25px;
+  text-align: center;
+}
+
+.logos .collection .loghi  img{
+  max-width: 100px;
+}
+
 
 
 
