@@ -218,7 +218,7 @@ color: #000;
   padding-bottom: 20px;
 }
 
-.text-specialties::after {
+.text-specialties::before {
   content: "";
   display: inline-block;
   width: 60px;
@@ -650,7 +650,7 @@ color: #000;
 .play {
   background-image: url("../img/h1-img-04.jpg");
   background-repeat: no-repeat;
-  height: 1000px;
+  height: 900px;
   max-width: 99%;
   position: relative;
 }
@@ -658,10 +658,11 @@ color: #000;
 .play i {
   position: absolute;
   top: 50%;
-  bottom: 50%;
+  left: 50%;
   color: #fff;
   font-size: 30px;
 }
+
 .play .lateral-square {
   position: absolute;
   top: -20px;
@@ -673,7 +674,8 @@ color: #000;
 
 .play .lateral-square img {
   max-width: 25px;
-  padding-top: 6px;
+  margin-top: 8px;
+  transform: translateX(5px);
 }
 
 .play .shopping-cart {
@@ -687,8 +689,123 @@ color: #000;
 
 .play .shopping-cart img {
   max-width: 15px;
-  padding-top: 12px;
+  margin-top: 12px;
+  transform: translateX(8px);
 }
+
+
+
+/* CONTACT US */
+.contact-us {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  background: #f9f9f9;
+}
+
+.world {
+  position: relative;
+  margin-top: 120px;
+}
+
+.world img {
+  max-width: 80%;
+}
+
+.pointer span img {
+  max-width: 15px;
+}
+
+.pointer .pointer-1 {
+  position: absolute;
+  top: 18%;
+  left: 20%;
+}
+
+.pointer .pointer-2{
+  position: absolute;
+  top: 10%;
+  right: 57%;
+}
+
+.pointer .pointer-3{
+  position: absolute;
+  bottom: 56%;
+  right: 32%;
+}
+
+.where {
+  position: absolute;
+  top: 25%;
+  left: 18%;
+  width: 160px;
+  height: 60px;
+  border: 1px solid grey;
+  padding: 8px 0 0 5px;
+}
+
+.text-contact::after {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 2px;
+  border-radius: 2px;
+  background: #ff4612;
+  margin-top: 10px;
+}
+
+/* Contact */
+.contact {
+  margin-top: 80px;
+}
+.contact .info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact .form-group {
+  margin-bottom: 0;
+} 
+
+.contact input,
+.contact textarea {
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 10px;
+  color: #2c3e50;
+  background: #f9f9f9;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #f9f9f9;
+}
+
+.contact input {
+  padding: 0;
+  height: 50px;
+  width: 200px;
+  line-height: 100px;
+  margin-right: 15px;
+}
+
+.contact textarea {
+  padding: 30px 0;
+  margin-bottom: 30px;
+  height: 80px;
+  width: 100%;
+}
+
+.contact ::placeholder {
+  color: #6c757d;
+}
+
+
+
 
 
 
