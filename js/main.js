@@ -60,34 +60,32 @@ const everlead = new Vue ({
                 moreInfo: 'Read more'
             }
         ],
-        news: [
-            {
-                // logo: './img/h1-blog-img-02.jpg',
-                // logo1: './img/h1-blog-img-03.jpg',
-                day: 'May 5, 2019',
-                name: 'Amanda Doe',
-                title: 'Next Investment',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quo quidem obcaecati totam iste eligendi ....',
-                moreInfo: 'Read more'
-            },
-            {
-                // logo: '/img/h1-blog-img-03.jpg',
-                // logo1: './img/h1-img-01.jpg',
-                day: 'May 5, 2019',
-                name: 'Amanda Doe',
-                title: 'Next Investment',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quo quidem obcaecati totam iste eligendi ....',
-                moreInfo: 'Read more'
-            },
-            {
-                // logo: './img/h1-img-01.jpg',
-                // logo1: './img/h1-blog-img-01.jpg"',
-                day: 'May 5, 2019',
-                name: 'Amanda Doe',
-                title: 'Next Investment',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quo quidem obcaecati totam iste eligendi ....',
-                moreInfo: 'Read more'
-            }
-        ]
+    //     images: [
+    //         "./img/h3-img-04.png",  //0
+    //         "./img/h3-img-07.png",  //1
+    //         "./img/h3-img-08.png",  //2
+    //     ],
+    //     indexPhoto: 0,
+    // },
+    // methods: {
+    //   nextPhoto() {
+    //     this.indexPhoto += 1;
+
+    //     if(this.indexPhoto > (this.photos.lenght - 1)) {
+    //       this.indexPhoto = 0;
+    //       }
+    //   },
+    //   prevPhoto() {
+    //     this.indexPhoto -= 1;
+  
+    //     if(this.indexPhoto < 0) {
+    //       this.indexPhoto = this.photos.lenght - 1;
+    //     }
+    //   },
+    //   setPhoto(index) {
+    //     console.log(index);
+  
+    //     this.indexPhoto = index;
+    //   },
     }
 });
