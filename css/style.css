@@ -809,18 +809,11 @@ color: #000;
 .logos .collection {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding-top: 15px;
-  list-style: none;
-  transform: translateY(-160px);
-}
-
-.logos .collection {
-  display: flex;
-  flex-wrap: wrap;
   justify-content: space-evenly;
   padding-top: 15px;
   list-style: none;
+  transform: translateY(-160px);
+  position: relative;
 }
 
 .logos .collection .loghi {
@@ -833,6 +826,83 @@ color: #000;
 .logos .collection .loghi  img{
   max-width: 100px;
 }
+
+
+/* FOOTER */
+.footer-up {
+  height: 400px;
+  background: #000;
+  transform: translateY(-150px);
+  color: #fff;
+  font-size: 13px;
+}
+
+.footer-up .collection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 15px;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.footer-up .collection li {
+  flex-basis: 250px;
+  margin: 25px;
+}
+
+.footer-up .collection .text-footer::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 2px;
+  border-radius: 2px;
+  background: #ff4612;
+  margin-top: 10px;
+}
+
+
+.footer-bottom {
+  padding: 15px 0;
+  background: #ff4612;
+  transform: translateY(-150px);
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 10px;
+  color: #fff;
+}
+
+.collection .about li {
+  list-style: none;
+  margin: 0;
+}
+
+.footer-up .form-group input {
+  position: absolute;
+  right: 25%;
+  top: 40%;
+  background: #000;
+  border: 0;
+  border-bottom: 1px solid #f9f9f9;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 10px;
+  color: #f9f9f9;
+  background: #000;
+  width: 150px;
+}
+
+.footer-up .form-group span {
+  position: absolute;
+  right: 25%;
+  top: 40%;
+  font-size: 10px;
+}
+
+
+
 
 
 
