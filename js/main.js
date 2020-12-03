@@ -66,33 +66,52 @@ const everlead = new Vue ({
             {img: './img/h4-clients-img-07.png'},
             {img: './img/h4-clients-img-09.png'},
             {img: './img/h4-clients-img-01.png'},  
-        ]
-    //     images: [
-    //         "./img/h3-img-04.png",  //0
-    //         "./img/h3-img-07.png",  //1
-    //         "./img/h3-img-08.png",  //2
-    //     ],
-    //     indexPhoto: 0,
+        ],
+        profileIndex: 0,
+        intervalId: null,
+        profiles: [
+            {
+                name: 'Cynthia Clark',
+                image: 'h3-img-04',
+                text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, nostrum nemo? Animi repellat quam sequi corporis aperiam ipsam nemo cupiditate sapiente.'
+            },
+            {
+                name: 'Julia Roberts',
+                image: 'h3-img-07',
+                text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, nostrum nemo? Animi repellat quam sequi corporis aperiam ipsam nemo cupiditate sapiente.'
+            },
+            {
+                name: 'Sharon Stone',
+                image: 'h3-img-08',
+                text: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, nostrum nemo? Animi repellat quam sequi corporis aperiam ipsam nemo cupiditate sapiente.'
+            },
+        ],
+    },
+    // created() {
+    //     this.startLoop();
     // },
-    // methods: {
-    //   nextPhoto() {
-    //     this.indexPhoto += 1;
-
-    //     if(this.indexPhoto > (this.photos.lenght - 1)) {
-    //       this.indexPhoto = 0;
-    //       }
-    //   },
-    //   prevPhoto() {
-    //     this.indexPhoto -= 1;
+    methods: {
+        nextPhoto() {
+          this.profileIndex += 1;
   
-    //     if(this.indexPhoto < 0) {
-    //       this.indexPhoto = this.photos.lenght - 1;
-    //     }
-    //   },
-    //   setPhoto(index) {
-    //     console.log(index);
-  
-    //     this.indexPhoto = index;
-    //   },
+          if(this.profileIndex > (this.profiles.lenght - 1)) {
+            this.profileIndex = 0;
+          }
+        },
+        prevPhoto() {
+          this.profileIndex -= 1;
+    
+          if(this.profileIndex < 0) {
+            this.profileIndex = this.profiles.lenght - 1;
+          }
+        },
+        setPhoto(index) {
+          this.profileIndex = index;
+        },
+        startLoop() {
+            this.intervalId = setInterval(() => {
+              this.nextPhoto();
+            }, 2500);
+        }
     }
 });

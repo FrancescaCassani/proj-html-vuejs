@@ -319,16 +319,32 @@
     <section class="testimonials t-c">
       <h1>Testimonials</h1>
       
-      <div class="profile">
-        <!-- Left Arrow -->
-        <i class="fas fa-long-arrow-alt-left left bd"></i>
+      <div class="profile" 
+           tabindex="0"
+           @keyup.arrow-left="prevPhoto"
+           @keyup.arrow-right="nextPhoto">
 
-        <img src="./img/h3-img-04.png" alt="">
-        <h4>Cynthia Clark</h4>
-        <p class="bd">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Architecto, nostrum nemo? <br>Animi repellat quam sequi corporis aperiam ipsam nemo cupiditate sapiente.</p>
+        <!-- Left Arrow -->
+        <div>
+          <i @click="prevPhoto" class="fas fa-long-arrow-alt-left left bd"></i>
+        </div>
+        
+        <div class="slider">
+          <img :src="`./img/${profiles[profileIndex].image}.png`">
+          <h4>{{profiles[profileIndex].name}}</h4>
+          <p class="bd">{{profiles[profileIndex].text}}</p>
+        </div>
+        
+        <div>
+          <i v-for="(element, index) in profiles" 
+          @click="setPhoto(index)"
+          :class="['far fa-square', profileIndex  === index ? 'active' : '']"></i>
+        </div>
 
         <!-- Right Arrow -->
-       <i class="fas fa-long-arrow-alt-right right bd"></i>
+       <i
+       @click="nextPhoto" 
+       class="fas fa-long-arrow-alt-right right bd"></i>
       </div>
     </section>
 
@@ -399,8 +415,9 @@
           
         <div class="btn orange">
           <div class="btn-orange">
-            <a class="white" href="#">Send</a>
+            <a class="" href="#">Send</a>
           </div>
+          <i class="fas fa-long-arrow-alt-right"></i>
         </div>
       </div>
     </section>
