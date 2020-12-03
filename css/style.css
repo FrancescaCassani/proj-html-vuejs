@@ -230,10 +230,8 @@ color: #000;
 }
 
 .middle-container {
-  position: absolute;
   top: -65px;
   left: 110px;
-  width: 1700px;
   height: 550px;
   padding-top: 70px;
   background: #fff;
@@ -454,26 +452,26 @@ color: #000;
   font-size: 11px;
 }
 
-/* Creative */
-.events .creative {
-  position: absolute;
+/* LEADER */
+
+.leader {
+  display: flex;
+  justify-content: center;
+}
+
+.creative {
+  /* position: absolute; */
   width: 550px;
   height: 250px;
-  bottom: 80px;
-  left: 300px;
   padding: 25px
 }
 
-.events .levels {
-  position: absolute;
+.levels {
   width: 550px;
   height: 300px;
-  right: 350px;
-  bottom: 50px;
-  padding: 25px;
 }
 
-.events .creative p::before {
+.creative p::before {
   content: "";
   display: inline-block;
   width: 60px;
@@ -483,16 +481,16 @@ color: #000;
   margin-bottom: 10px;
 }
 
-.events .creative h2 {
+.creative h2 {
   margin-bottom: 10px;
 }
 
-.events .creative p {
+.creative p {
   font-size: 14px;
   line-height: 20px;
 }
 
-.events .creative h5 {
+.creative h5 {
   margin-top: 10px;
   text-transform: uppercase;
   font-size: 11px;
@@ -512,6 +510,7 @@ color: #000;
   width: 400px;
   height: 2px;
   background: #d2d2d2;
+  position: relative;
 }
 
 .percent {
@@ -519,27 +518,14 @@ color: #000;
   height: 2px;
 }
 
-.levels .one {
-  position: absolute;
-  top: 48px;
-  right: 120px;
-}
-.levels .two {
-  position: absolute;
-  top: 98px;
-  right: 120px;
-}
-.levels .three {
-  position: absolute;
-  top: 150px;
-  right: 120px;
-}
+.levels .one,
+.levels .two,
+.levels .three,
 .levels .four {
   position: absolute;
-  top: 198px;
-  right: 120px;
+  bottom: 15px;
+  right: 0;
 }
-
 
 /* LATEST NEWS */
 .latest-news {
@@ -675,6 +661,9 @@ color: #000;
   bottom: 150px;
 }
 
+.testimonials .nav i.active {
+  color: dodgerblue;
+}
 
 
 /* PLAY */
@@ -846,20 +835,19 @@ color: #000;
   position: relative;
 }
 
-.logos .collection .loghi {
+.logos .collection .loghi,
+.logos .hidden .loghi {
   flex-basis: 180px;
   margin: 15px 25px;
   padding: 25px;
   text-align: center;
 }
 
-.logos .collection .loghi img{
+.logos .collection .loghi img,
+.logos .hidden .loghi img {
   max-width: 100px;
 }
 
-.logos .collection .loghi:hover{
-  color: #ff4612;
-}
 
 
 /* FOOTER */
@@ -935,10 +923,14 @@ color: #000;
   margin: 0;
 }
 
+
+.footer-up .collection .text-footer {
+  position: relative;
+}
 .footer-up .form-group input {
   position: absolute;
-  right: 25%;
-  top: 40%;
+  right: 40%;
+  bottom: -80px;
   background: #181515;
   border: 0;
   border-bottom: 1px solid #f9f9f9;
@@ -951,7 +943,7 @@ color: #000;
 .footer-up .form-group span {
   position: absolute;
   right: 25%;
-  top: 40%;
+  bottom: -80px;
   font-size: 10px;
 }
 

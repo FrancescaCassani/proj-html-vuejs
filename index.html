@@ -168,55 +168,61 @@
             </li>
           </ul>
         </div>
+      </section>
 
-        <div class="creative">
-          <h2>Creative Leader
-            <span></span>
-          </h2>
-          
-          <p class="c0"><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, sapiente! Debitis, sapiente quisquam numquam eligendi totam consequatur facilis quasi officiis, odit molestias esse, est voluptates architecto veniam quas eum? Veritatis!</p>
-          <h5>Read more</h5>
+      <section>
+        <div class="leader">
+          <div class="creative">
+            <h2>Creative Leader
+              <span></span>
+            </h2>
+            
+            <p class="c0"><br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde, sapiente! Debitis, sapiente quisquam numquam eligendi totam consequatur facilis quasi officiis, odit molestias esse, est voluptates architecto veniam quas eum? Veritatis!</p>
+            <h5>Read more</h5>
+          </div>
+
+          <div class="levels">
+            <div>
+              <h3>Mentorship</h3>
+              <div class="bar">
+                <div class="percent" style="width: 78%">
+                  <span class="one">78%</span>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <h3>Education</h3>
+              <div class="bar">
+                <div class="percent" style="width: 95%">
+                  <span class="two">95%</span>
+                </div>
+              </div>
+            </div>
+            
+            <div>
+              <h3>Learning</h3>
+              <div class="bar">
+                <div class="percent" style="width: 65%">
+                  <span class="three">65%</span>
+                </div>
+              </div>
+            </div>
+  
+            <div>
+              <h3>Motivation</h3>
+              <div class="bar">
+                <div class="percent" style="width: 83%">
+                  <span class="four">83%</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="levels">
-          <div>
-            <h3>Mentorship</h3>
-            <div class="bar">
-              <div class="percent" style="width: 78%">
-                <span class="one">78%</span>
-              </div>
-            </div>
-          </div>
-          
-          <div>
-            <h3>Education</h3>
-            <div class="bar">
-              <div class="percent" style="width: 95%">
-                <span class="two">95%</span>
-              </div>
-            </div>
-          </div>
-          
-          <div>
-            <h3>Learning</h3>
-            <div class="bar">
-              <div class="percent" style="width: 65%">
-                <span class="three">65%</span>
-              </div>
-            </div>
-          </div>
-
-          <div>
-            <h3>Motivation</h3>
-            <div class="bar">
-              <div class="percent" style="width: 83%">
-                <span class="four">83%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+        
+    
 
 
 
@@ -323,15 +329,18 @@
         </div>
         
         <div class="slider">
-          <img :src="`./img/${profiles[profileIndex].image}.png`">
-          <h4>{{profiles[profileIndex].name}}</h4>
-          <p class="bd">{{profiles[profileIndex].text}}</p>
+          <img :src="`./img/${profiles[currentIndex].image}.png`">
         </div>
         
         <div>
+          <h4>{{profiles[currentIndex].name}}</h4>
+          <p class="bd">{{profiles[currentIndex].text}}</p>
+        </div>
+
+        <div>
           <i v-for="(element, index) in profiles" 
           @click="setPhoto(index)"
-          :class="['far fa-square', profileIndex  === index ? 'active' : '']"></i>
+          :class="['far fa-square', currentIndex  === index ? 'active' : '']"></i>
         </div>
 
         <!-- Right Arrow -->
@@ -428,13 +437,6 @@
             </div>
           </li>
         </ul>
-        <ul class="collection">
-          <li class="loghi" v-for="item in logosOrange">
-            <div class="structures">
-              <img :src="item.img">
-            </div>
-          </li>
-        </ul>
       </div>
     </section>
 
@@ -503,6 +505,10 @@
             <li>
               <div class="text-footer">
                 <h4>Contact me</h4>
+                <div class="form-group">
+                  <input type="text" class="form-control c0" id="name" placeholder="Your Name">
+                  <span>SUBSCRIBE</span>
+                </div>
               </div>
               <i></i>
               <h5 class="c0">457 BigBlue Street, NY 10013</h5>
@@ -511,11 +517,9 @@
               <i></i>
               <h5 class="c0">everlead@mikado.com</h5> 
             </li>
+            
           </ul>
-          <div class="form-group">
-            <input type="text" class="form-control c0" id="name" placeholder="Your Name">
-            <span>SUBSCRIBE</span>
-          </div>
+          
         </div>
       </div>
 

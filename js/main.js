@@ -106,8 +106,8 @@ const everlead = new Vue ({
             {img: './img/h4-clients-img-10-1.png'},
             {img: './img/h4-clients-img-02.png'},  
         ],
-        profileIndex: 0,
         intervalId: null,
+        currentIndex: 0,
         profiles: [
             {
                 name: 'Cynthia Clark',
@@ -130,23 +130,24 @@ const everlead = new Vue ({
     //     this.startLoop();
     // },
     methods: {
+        setPhoto(index) {
+            this.currentIndex = index;
+          },
         nextPhoto() {
-          this.profileIndex += 1;
+          this.currentIndex += 1;
   
-          if(this.profileIndex > (this.profiles.lenght - 1)) {
-            this.profileIndex = 0;
+          if(this.currentIndex > this.profiles.lenght - 1) {
+            this.currentIndex = 0;
           }
         },
         prevPhoto() {
-          this.profileIndex -= 1;
+          this.currentIndex -= 1;
     
-          if(this.profileIndex < 0) {
-            this.profileIndex = this.profiles.lenght - 1;
+          if(this.currentIndex < 0) {
+            this.currentIndex = this.profiles.lenght - 1;
           }
         },
-        setPhoto(index) {
-          this.profileIndex = index;
-        },
+        
         startLoop() {
             this.intervalId = setInterval(() => {
               this.nextPhoto();
