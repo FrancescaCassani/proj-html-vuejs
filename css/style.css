@@ -20,8 +20,9 @@ body {
 }
 
 .circle {
-  display: inline-block;
-  position: absolute;
+  position: fixed;
+  bottom: 0;
+  right: 1%;
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -30,9 +31,11 @@ body {
 }
 
 .circle i {
-  padding-top: 10px;
+ padding-left: 16px;
+ padding-top: 12px;
   color: #ff4612;
 }
+
 
 /* TIPOGRAPHY  */
 .c0 {
@@ -109,6 +112,10 @@ header {
   text-transform: uppercase;
   font-size: 14px;
   color: #000;
+}
+
+.menu-nav ul li a:hover{
+  color: #ff4612;
 }
 
 
@@ -275,11 +282,6 @@ color: #000;
   padding: 12px;
 }
 
-.circle.first {
-  right: -60px;
-  bottom: -90px;
-}
-
 
 /* THE FOUNDER */
 .jason-bickford {
@@ -344,13 +346,12 @@ color: #000;
   background: #181515;
 }
 
-
-
 .jason-bickford .bio p {
   font-size: 14px;
   line-height: 20px;
 }
 
+/* Rectangle span */
 .jason-bickford .rectangle {
   display: inline-block;
   position: relative;
@@ -416,7 +417,6 @@ color: #000;
   border-bottom: 1px solid #e1e1e1;
 }
 
-
 .events .appointments li:last-child {
   border-bottom: none;
 }
@@ -454,6 +454,7 @@ color: #000;
   font-size: 11px;
 }
 
+/* Creative */
 .events .creative {
   position: absolute;
   width: 550px;
@@ -470,7 +471,6 @@ color: #000;
   right: 350px;
   bottom: 50px;
   padding: 25px;
-
 }
 
 .events .creative p::before {
@@ -507,6 +507,7 @@ color: #000;
   font-size: 16px;
 }
 
+/* Bar percent */
 .bar {
   width: 400px;
   height: 2px;
@@ -561,7 +562,6 @@ color: #000;
   right: 5%;
 }
 
-
 .latest-news .background img {
   position: absolute;
   top: -80px;
@@ -599,6 +599,7 @@ color: #000;
   margin-top: 20px;
 }
 
+/* People */
 .people .collection {
   display: flex;
   flex-wrap: wrap;
@@ -629,6 +630,7 @@ color: #000;
   position: absolute;
   bottom: -160px;
 }
+
 
 /* TESTIMONIALS */
 .testimonials {
@@ -769,7 +771,7 @@ color: #000;
   left: 18%;
   width: 160px;
   height: 60px;
-  border: 1px solid grey;
+  border: 1px solid #fafafa;
   padding: 8px 0 0 5px;
 }
 
@@ -860,13 +862,8 @@ color: #000;
 }
 
 
-
-
-
-
-
-
 /* FOOTER */
+/* Footer up */
 .footer-up {
   height: 400px;
   background: #181515;
@@ -900,7 +897,28 @@ color: #000;
   margin-top: 10px;
 }
 
+.footer-up .social {
+  display: flex;
+  list-style: none;
+}
 
+.footer-up .social i {
+  width: 22px;
+  height: 22px;
+  background: #f9f9f9;
+  border-radius: 50%;
+  color: #181515;
+  text-align: center;
+  padding-top: 5px;
+  margin-left: -30px;
+}
+
+.footer-up .social i:hover{
+  background: #ff4612;
+  color: #fff;
+}
+
+/* Footer bottom */
 .footer-bottom {
   padding: 15px 0;
   background: #ff4612;
@@ -927,7 +945,6 @@ color: #000;
   box-shadow: none;
   border-radius: 0;
   font-size: 10px;
-  background: #000;
   width: 150px;
 }
 
@@ -939,21 +956,6 @@ color: #000;
 }
 
 
-.footer-up .social {
-  display: flex;
-  list-style: none;
-}
-
-.footer-up .social i {
-  width: 22px;
-  height: 22px;
-  background: #f9f9f9;
-  border-radius: 50%;
-  color: #181515;
-  text-align: center;
-  padding-top: 5px;
-  margin-left: -30px;
-}
 
 
 

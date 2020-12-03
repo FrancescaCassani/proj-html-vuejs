@@ -96,9 +96,6 @@
               <small class="c0">{{item.text}}</small>
             </li>
           </ul>
-          <span class="circle first">
-            <i class="fas fa-long-arrow-alt-up"></i>
-          </span>
         </div>
       </div>
     </section>
@@ -242,69 +239,65 @@
 
       <div class="people">
         <ul class="collection">
-          <li class="loghi">
+          <li class="loghi" 
+            v-for="item in peopleImages">
             <div class="img">
-              <img src="./img/h1-blog-img-02.jpg">
+              <img :src="item.logo1">
             </div>
             <div class="second">
-              <img src="./img/h1-blog-img-03.jpg">
+              <img :src="item.logo2">
             </div>
-            <div class="date">
+            <div class="date" v-for="text in peopleText">
               <p class="c0">
-                <i class="far fa-clock"></i>
-                May 5, 2019
-                <i class="far fa-user"></i>
-                Amanda Doe
+                <i class="far fa-clock"></i>{{text.when}}
+                <i class="far fa-user"></i>{{text.who}}
               </p>
               <div class="text">
-                <h4>Next Investment</h4>
-                <p class="c0">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quo quidem obcaecati totam iste eligendi ...."</p>
-                <h5>Read More</h5>
+                <h4>{{text.title}}</h4>
+                <p class="c0">"{{text.description}}"</p>
+                <h5>{{text.moreInfo}}</h5>
               </div>
             </div>
           </li>
 
-          <li class="loghi">
+          <li class="loghi" 
+            v-for="item in peopleImages">
             <div class="img">
-              <img src="./img/h1-blog-img-03.jpg">
+              <img :src="item.logo2">
             </div>
             <div class="second">
-              <img src="./img/h1-img-01.jpg">
+              <img :src="item.logo4">
             </div>
-            <div class="date">
+            <div class="date" v-for="text in peopleText">
               <p class="c0">
-                <i class="far fa-clock"></i>
-                May 5, 2019
-                <i class="far fa-user"></i>
-                Amanda Doe
+                <i class="far fa-clock"></i>{{text.when}}
+                <i class="far fa-user"></i>{{text.who}}
               </p>
               <div class="text">
-                <h4>Next Investment</h4>
-                <p class="c0">"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quo quidem obcaecati totam iste eligendi ...."</p>
-                <h5>Read More</h5>
+                <h4>{{text.title}}</h4>
+                <p class="c0">"{{text.description}}"</p>
+                <h5>{{text.moreInfo}}</h5>
               </div>
             </div>
           </li>
 
-          <li class="loghi">
+          <li class="loghi" 
+            v-for="item in peopleImages">
             <div class="img">
-              <img src="./img/h1-img-01.jpg">
+              <img :src="item.logo4">
             </div>
-
             <div class="second">
-              <img src="./img/h1-blog-img-01.jpg">
+              <img :src="item.logo">
             </div>
-            <div class="date">
+            <div class="date" v-for="text in peopleText">
               <p class="c0">
-                <i class="far fa-clock"></i>
-                May 5, 2019
-                <i class="far fa-user"></i>
-                Amanda Doe
+                <i class="far fa-clock"></i>{{text.when}}
+                <i class="far fa-user"></i>{{text.who}}
               </p>
               <div class="text">
-                <h4>Next Investment</h4>
-                <p class="c0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quo quidem obcaecati totam iste eligendi ....</p>
-                <h5>Read More</h5>
+                <h4>{{text.title}}</h4>
+                <p class="c0">"{{text.description}}"</p>
+                <h5>{{text.moreInfo}}</h5>
               </div>
             </div>
           </li>
@@ -342,9 +335,10 @@
         </div>
 
         <!-- Right Arrow -->
-       <i
-       @click="nextPhoto" 
-       class="fas fa-long-arrow-alt-right right bd"></i>
+        <div>
+          <i @click="nextPhoto" 
+             class="fas fa-long-arrow-alt-right right bd"></i>
+        </div>
       </div>
     </section>
 
@@ -429,6 +423,13 @@
       <div class="logos">
         <ul class="collection">
           <li class="loghi" v-for="item in logos">
+            <div class="structures">
+              <img :src="item.img">
+            </div>
+          </li>
+        </ul>
+        <ul class="collection">
+          <li class="loghi" v-for="item in logosOrange">
             <div class="structures">
               <img :src="item.img">
             </div>
@@ -525,6 +526,12 @@
         </div>
       </div>
     </footer>
+
+
+    <!-- NAVIGATION ARROW -->
+    <div class="circle">
+      <i class="fas fa-long-arrow-alt-up"></i>
+    </div>
 
 
   </div>

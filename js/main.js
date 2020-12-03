@@ -60,12 +60,51 @@ const everlead = new Vue ({
                 moreInfo: 'Read more'
             }
         ],
+        peopleImages: [
+            {
+                logo1: './img/h1-blog-img-02.jpg',
+                logo2: './img/h1-blog-img-03.jpg',
+                logo4: './img/h1-img-01.jpg',
+                logo6: './img/h1-blog-img-01.jpg',
+
+            }
+        ],
+        peopleText: [
+            {
+                when: 'May 5, 2019',
+                who: 'Amanda Doe',
+                title: 'Next Investment',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quo quidem obcaecati totam iste eligendi ....',
+                moreInfo: 'Read more'
+            },
+            {
+                when: 'May 5, 2019',
+                who: 'Amanda Doe',
+                title: 'Next Investment',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quo quidem obcaecati totam iste eligendi ....',
+                moreInfo: 'Read more'
+            },
+            {
+                when: 'May 5, 2019',
+                who: 'Amanda Doe',
+                title: 'Next Investment',
+                description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quo quidem obcaecati totam iste eligendi ....',
+                moreInfo: 'Read more'
+            },
+        ],
         logos: [
             {img: './img/h4-clients-img-03.png'},
             {img: './img/h4-clients-img-05.png'},
             {img: './img/h4-clients-img-07.png'},
             {img: './img/h4-clients-img-09.png'},
             {img: './img/h4-clients-img-01.png'},  
+        ],
+        logosOrange: [
+            {img: './img/h4-clients-img-04-1.png'},
+            {img: './img/h4-clients-img-06-1.png'},
+            {img: './img/h4-clients-img-08-1.png'},
+            {img: './img/h4-clients-img-10-1.png'},
+            {img: './img/h4-clients-img-02.png'},  
         ],
         profileIndex: 0,
         intervalId: null,
