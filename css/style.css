@@ -378,7 +378,7 @@ color: #000;
 /* UPCOMING EVENTS */
 .upcoming-events {
   position: relative;
-  height: 1400px;
+  height: 1100px;
   background: #fff;
 }
 
@@ -855,7 +855,6 @@ color: #000;
 .footer-up {
   height: 400px;
   background: #181515;
-  transform: translateY(-150px);
   color: #fff;
   font-size: 13px;
 }
@@ -910,7 +909,6 @@ color: #000;
 .footer-bottom {
   padding: 15px 0;
   background: #ff4612;
-  transform: translateY(-150px);
 }
 
 .footer-bottom p {

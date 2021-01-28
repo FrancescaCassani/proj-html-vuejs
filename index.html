@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 
     <title>Everlead</title>
 </head>
@@ -293,7 +294,7 @@
               <img :src="item.logo4">
             </div>
             <div class="second">
-              <img :src="item.logo">
+              <img :src="item.logo6">
             </div>
             <div class="date" v-for="text in peopleText">
               <p class="c0">
@@ -428,7 +429,7 @@
 
 
     <!-- LOGHI -->
-    <section>
+    <!-- <section>
       <div class="logos">
         <ul class="collection">
           <li class="loghi" v-for="item in logos">
@@ -438,7 +439,7 @@
           </li>
         </ul>
       </div>
-    </section>
+    </section> -->
 
 
     <footer class="main-footer">
@@ -540,5 +541,17 @@
 
   </div>
   <script src="./js/main.js"></script>
+  <script
+  type="module"
+  src="https://unpkg.com/img-comparison-slider@3/dist/component/component.esm.js"
+></script>
+<script
+  nomodule=""
+  src="https://unpkg.com/img-comparison-slider@3/dist/component/component.js"
+></script>
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/img-comparison-slider@3/dist/collection/styles/initial.css"
+/>
 </body>
 </html>
